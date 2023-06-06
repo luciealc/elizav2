@@ -1,0 +1,568 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+.navbar {
+    margin: 0;
+    font: bold 14px/1.4 'SF Pro Display', sans-serif;
+    background: white;
+}
+
+html{
+    background: white;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.nav-links { 
+    margin: 30px; 
+    padding: 0;
+    padding-bottom: 20px;
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: right;
+}
+
+.nav-title-link { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.linktitle {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.linktitle:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.linktitle:hover:after { 
+    width: 100%; 
+    left: 0;
+}
+
+.nav-logo{
+    width: 190px;
+    height: 100%;
+    margin-top: -10px;
+}
+
+@media screen and (max-height: 300px) {
+    .nav-links {
+        margin-top: 40px;
+    }
+}
+
+/*-------
+home page 
+----------*/
+
+.home-page-title{
+    font-family: 'SF Pro Display', sans-serif;
+    text-align: center;
+    font-size: 75px;
+}
+
+.accueil-picture{
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.first-look-home{
+    margin: auto;
+    text-align: center;
+}
+
+.home-intro-phrase{
+    font-size: x-large;
+}
+
+.seemore-button{
+    padding: 10px 15px;
+    margin: 30px;
+    width: 108px;
+    height: 36px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    border-radius: 5px;
+    line-height: 15px;
+    box-sizing: border-box;
+}
+
+
+.nd-page-home{
+    background-color: #F7F7F7;
+}
+
+.middle-image-left{
+    width: 1fr;
+    height: 356px;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.middle-image-right{
+    width: 1fr;
+    height: 356.5px;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.middle-bottom-left{
+    margin-left: 50px;
+}
+
+.middle-text-info-title{
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.middle-text-info{
+    font-size: large;
+    margin-top: 30px;
+}
+
+.readmore-button{
+    padding: 10px 15px;
+    margin: 30px;
+    width: 120px;
+    height: 36px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    border-radius: 5px;
+    line-height: 15px;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10px;
+}
+
+.grid-item{
+    padding: 10px;
+}
+
+
+
+/*--------
+about us page 
+------------*/
+
+.aboutus-text{
+    font-size: large;
+    margin: 50px;
+}
+
+.aboutus-title{
+    margin: 40px;
+}
+
+/*---------
+Help Page
+----------*/
+
+.help-title{
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.pixel-intro{
+    font-size: large;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/*----------
+chat box
+----------*/
+
+.input{
+    text-align: center;
+}
+
+textarea{
+    min-width: 700px;
+    margin: auto;
+    justify-content: center;
+}
+
+.answer{
+    max-width: 700px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#chatting{
+    list-style-type: none;
+}
+
+.submitting{
+    margin: auto;
+    text-align: center;
+}
+
+.submitbutton{
+    position: relative;
+    padding: 8px 16px;
+    background: #009579;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.submitbutton:active {
+    background: #007a63;
+}
+
+.submitbutton__text{
+    font: bold 20px 'SF Pro Display', sans-serif;
+    color: #FFFFFF;
+    transition: all 0.2s;
+}
+
+/* .button--loading .submitbutton__text{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.button--loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+} */
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.displayanswer{
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+}
+
+ul{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#chatting{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/*--------
+Suggested prompts
+-----------*/
+
+.suggprompts{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.prompt-sugg{
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.prompt-sugg:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*------------
+portfolio page
+-------------*/
+
+/*portfolio title*/
+.portfolio-title{
+    margin: 40px;
+    /* margin-bottom: 100px; */
+}
+
+.port-intro{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    font-size: x-large;
+}
+
+.bottom{
+    margin-top: 75px;
+}
+
+/*****carrousel 3d automatique*****/
+
+*{box-sizing : border-box}
+
+img{max-width:100%}
+
+.contenu_carou_auto{
+    margin:2rem auto;
+    width:500px;
+    height:279px;
+    perspective:8000px;
+}
+		
+.caroussel-image{
+    animation:rotation 24s infinite alternate linear;	
+    transform-style:preserve-3d;
+    position:relative;	
+}
+
+.caroussel-image img{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+		
+.caroussel-image img{
+    filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+    width:400px;
+    height:266px;
+    left:10px;
+    outline:1px solid transparent;
+    backface-visibility:hidden
+}
+		
+.caroussel-image img:nth-child(1){
+    transform:translate3d(0,0,495px)	
+}
+		
+.caroussel-image img:nth-child(2){
+    transform:rotateY(45deg) translateZ(495px)
+}
+		
+.caroussel-image img:nth-child(3){
+	transform:rotateY(90deg) translateZ(495px)
+}
+	
+.caroussel-image img:nth-child(4){
+	transform:rotateY(135deg) translateZ(495px)
+}
+	
+.caroussel-image img:nth-child(5){
+	transform:rotateY(180deg) translateZ(495px)
+}
+	
+.caroussel-image img:nth-child(6){
+	transform:rotateY(225deg) translateZ(495px)
+}
+	
+.caroussel-image img:nth-child(7){
+	transform:rotateY(270deg) translateZ(495px)
+}
+	
+.caroussel-image img:nth-child(8){
+	transform:rotateY(315deg) translateZ(495px)
+}
+
+	
+
+	
+@keyframes rotation{
+from{transform:rotatey(0)}
+to{transform:rotatey(0.5turn)}}
+	
+/*****fin carrousel 3d automatique*****/
+
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main */
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8"
+            "item9"
+            "item10";
+}
+
+.grid-container .item {
+  height: 300px;
+}
+
+.grid-container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+.item7 {
+  grid-area: item7;
+}
+.item8 {
+  grid-area: item8;
+}
+.item9 {
+  grid-area: item9;
+}
+.item10 {
+  grid-area: item10;
+}
+
+/* Animations */
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 700px) {
+  .grid-container {
+    grid-template-areas:
+        "item1 item2"
+        "item3 item3"
+        "item4 item5"
+        "item6 item5"
+        "item7 item7"
+        "item7 item7"
+        "item8 item9"
+        "item10 item10";
+  }
+
+  .grid-container .item5 {
+    height: auto;
+  }
+}
+
+
+
+
+/*------------
+about us page
+-------------*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-gap: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.scd-title{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.photo-image{
+    /* max-height: 300px;
+    min-height: 280px;
+    max-width: 200px;
+    min-width: 200px; */
+    width: 200px;
+    height: 280px;
+    margin: auto;
+}
